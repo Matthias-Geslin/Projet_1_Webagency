@@ -1,0 +1,844 @@
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                main blocks content                  |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+body {
+    color: #676b70;
+    font-family: 'Roboto-Regular', sans-serif, "Impact", "Arial Black", "Arial", "Verdana";
+    font-weight: lighter;
+}
+
+
+/*~~~~~~~~~~~~~~~~*/
+/*~~~~ Header ~~~~*/
+.main_menu {
+    z-index: 10;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    display: block;
+}
+
+/*~~~~ ul ~~~~*/
+ul {
+    list-style-type: none;
+}
+
+/*~~~~ nav list ~~~~*/
+.list-top {
+    display: flex;
+    align-items: center;
+}
+
+.home,
+.services,
+.projects,
+.contact {
+    padding: 35px 20px 35px 20px;
+}
+
+.home:hover,
+.services:hover,
+.projects:hover,
+.contact:hover {
+    color: #5d5d5d;
+    border-top: 3px solid #5cadd3;
+}
+
+/*~~~~ slider ~~~~*/
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.slider-girl {
+    padding-top: 90px;
+    width: 100%;
+}
+
+.slider-boy {
+    padding-top: 90px;
+    width: 100%;
+}
+
+
+div {
+    position: relative;
+}
+
+/*~~~~ slider text ~~~~*/
+.fig-text-slider {
+    position: absolute;
+    width: 35%;
+    top: 35%;
+    left: 10%;
+    line-height: 1;
+}
+
+div section h1{
+    font-size: 40px;
+}
+
+.button-header {
+    width: 125px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px #4494bb;
+}
+
+.button-header:active {
+    position: relative;
+    box-shadow: none;
+    top: 5px;
+}
+
+/*
+div figure input, div figure label{
+    position: absolute;
+    top: 150px;
+    margin-top: 0;
+}
+*/
+
+
+.expandable , .expandable2{
+    display: none;
+}
+
+#isexpanded:checked ~ .expandable{
+    display: block;
+    background: #cccccc;
+}
+
+#isexpanded2:checked ~ .expandable2{
+    display: block;
+    background: #cccccc;
+}
+
+/*~~~~ position style btn ~~~~*/
+.left,
+.right,
+.left-lb,
+.right-lb{
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.left-lb,
+.right-lb{
+    text-align: center;
+    border-radius: 0 50px 50px 0;
+    background-color: #434247;
+}
+
+.right,
+.right-lb{
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    position: relative;
+    color: white;
+    top: 33px;
+    font: 1px/1 FontAwesome;
+    font-size: 35px;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~*/
+/*~~~~ services ~~~~*/
+.services_text {
+    padding-top: 5%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;
+    grid-template-rows: 50px 30px 60px 40px 40px 40px 35px 65px 30px 35px 55px 30px 35px 100px;
+}
+
+
+.services-title {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 1;
+    margin: 0 auto 0 auto;
+    padding-bottom: 1%;
+}
+
+/*~~~~ underline ~~~~*/
+.services_circle::before {
+    content: '';
+    position: absolute;
+    width: 9.517vw;
+    top: 5%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d9d9d9;
+}
+
+.services_circle {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 3;
+}
+.services_circle .fa-circle-title{
+    top: -26px;
+}
+
+/*~~~~ fontawesome ~~~~*/
+.fa-circle-title {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: -11px;
+    padding: 3px;
+}
+
+.services_text .services_sentence {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 3;
+}
+
+/*~~~~ apple ~~~~*/
+.computer {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 5;
+}
+
+
+/*~~~~ UX global ~~~~*/
+.services_ux {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+
+/*~~~~ UX Fa ~~~~*/
+.fa-ux {
+    grid-column: 7;
+    grid-row: 8;
+}
+
+
+/*~~~~ UI Global ~~~~*/
+.services_ui {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+
+
+/*~~~~ UI fa ~~~~*/
+.fa-ui {
+    grid-column: 7;
+    grid-row: 11;
+}
+
+
+/*~~~~ SEO Global ~~~~*/
+.services_seo {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 14;
+}
+
+
+/*~~~~ SEO Fa ~~~~*/
+.fa-seo {
+    grid-column: 7;
+    grid-row: 14;
+}
+
+.services_description{
+    margin-top: -5px;
+    line-height: 1.5;
+}
+/*~~~~ fa common ~~~~*/
+.fa-chart-line,
+.fa-cubes,
+.fa-chart-pie {
+    position: relative;
+    padding: 16px;
+    border: 1px solid #d7d7d7;
+    font-size: 1.5em;
+}
+
+.fa-chart-line::after,
+.fa-cubes::after,
+.fa-chart-pie::after {
+    background-color: #5CADD3;
+    border: 3px solid white;
+    border-radius: 50%;
+    content: '';
+    height: 13px;
+    width: 12px;
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~*/
+/*~~~~ projects ~~~~*/
+.projects_text {
+    padding-top: 5%;
+    background-color: #f5f5f5;
+}
+
+.project_circle::before {
+    content: '';
+    position: absolute;
+    width: 9.517vw;
+    height: 1px;
+    left: 50%;
+    background-color: #d9d9d9;
+    transform: translateX(-50%);
+}
+
+.project_menu {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.works,
+.creative,
+.corporate,
+.portfolio {
+    padding: 15px;
+    background-color: #e5e5e5;
+}
+
+.works {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    box-shadow: 0 3px #4494bb;
+}
+
+.works:hover,
+.creative:hover,
+.corporate:hover,
+.portfolio:hover{
+    background-color: #5cadd3;
+    box-shadow: 0 3px #4494bb;
+    color: white;
+}
+
+.portfolio {
+    border-radius: 0 5px 5px 0;
+}
+
+.fa-caret-down{
+    position: absolute;
+    font-size: 30px;
+    margin: 10px 0 0 40px;
+}
+
+.project_menu input{
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+
+/*~~~~ project images ~~~~*/
+.project_figures{
+    margin: 0;
+}
+
+figure ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+figure li {
+    display: list-item;
+    padding: 10px;
+}
+
+.project_set {
+    position: relative;
+    margin: 0;
+}
+
+.project_picture {
+    margin-bottom: -1%;
+    width: 300px;
+}
+
+
+.portfolio-text {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+
+    width: 100%;
+    opacity: 0;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.portfolio-text h3,
+.portfolio-text p {
+    z-index: 5;
+    color: white;
+    padding-left: 10px;
+    line-height: 0.2;
+}
+
+.portfolio-text p {
+    line-height: 0.7;
+    font-weight: normal;
+}
+
+
+.fa-eye {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    padding: 10px;
+
+    border: 3px solid white;
+    color: white;
+    background-color: #5cadd3;
+}
+
+/*~~~~ project hover ~~~~*/
+.project_set:hover .portfolio-text {
+    opacity: 1;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~*/
+/*~~~~ contact ~~~~*/
+.contact_main{
+    padding-top: 5%;
+}
+/*~~~~ address ~~~~*/
+.contact_address {
+    position: absolute;
+    left: 60%;
+
+    width: 25%;
+    height: 500px;
+    padding: 0 0 25px 25px;
+    margin: 0.5%;
+
+    line-height: 1.3;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+footer h2{
+    font-size: 30px;
+    margin-left: 0;
+}
+
+footer strong{
+    color: #696d72;
+    font-weight: bold;
+}
+
+address {
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 1.3;
+    color: #70747a;
+    margin: -2% 0 4% 0;
+}
+
+u{
+    text-decoration: underline dotted;
+}
+
+footer input {
+    width: 88%;
+    border-radius: 5px;
+}
+
+textarea {
+    max-width: 88%;
+    width: 88%;
+    height: 180px;
+    border-radius: 5px;
+}
+
+footer input,
+textarea {
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+}
+
+.contact_button {
+    width: 130px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px #4494bb;
+    margin: 0;
+}
+
+/*~~~~ map ~~~~*/
+iframe {
+    border: none;
+    width: 100%;
+}
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                  childs propreties                  |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+a {
+    color: #676b70;
+    text-decoration: none;
+}
+
+strong {
+    color: #5cadd3;
+}
+
+i {
+    color: #5cadd3;
+}
+
+h2 {
+    color: #272727;
+    font-size: 45px;
+    margin: 15px;
+}
+
+h3 {
+    color: black;
+}
+
+
+/*~~~~ maps ~~~~*/
+.small {
+    display: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~ helper ~~~~~~*/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.block {
+    display: block;
+}
+
+
+.b-rad-50 {
+    border-radius: 50px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.back-blue {
+    background-color: #5cadd3;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.color-white {
+    color: white;
+}
+
+.padding-ten {
+    padding: 10px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                  media propreties                   |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+/*~~~~ media ~~~~*/
+@media screen and (max-width: 1280px){
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ header ~~~~~~*/
+    .main_menu {
+        display: flex;
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo {
+        margin: auto;
+    }
+    .list-top{
+        justify-content:center;
+    }
+    .home,
+    .services,
+    .projects,
+    .contact {
+        padding: 10px;
+    }
+
+
+    .fig-text-slider {
+        position: static;
+        margin: auto;
+        text-align: center;
+        color: #5d5d5d;
+    }
+
+    .left,
+    .right,
+    .left-lb,
+    .right-lb {
+        top: 55%;
+        width: 30px;
+        height: 60px;
+    }
+
+    .fa-angle-left,
+    .fa-angle-right{
+        top: 13px;
+        font-size: 35px;
+    }
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ services ~~~~~~*/
+    .services_text {
+        grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;
+    }
+
+    .computer{
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .fa-ux{}
+    .fa-ui{}
+    .fa-seo{}
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ projects ~~~~~~*/
+    .projects_text {
+        padding-top: 90px;
+    }
+
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ contact ~~~~~~*/
+    .contact_button{
+        align-self: center;
+        width: 100%;
+    }
+}
+
+/*~~~~ media  ~~~~*/
+@media screen and (max-width: 960px) {
+    .computer{
+        display: none;
+    }
+
+    .fig-text-slider {
+        width: 65%;
+    }
+
+    .services_text{
+        grid-template-columns: 5% 8% 15.5% 15.5% 80px;
+        grid-template-rows: 40px 30px 60px 35px 80px 20px 80px 35px 60px 50px 35px 80px;
+    }
+
+    .services_circle::before, .project_circle::before {
+        width: 35vw;
+    }
+
+    /*~~~~ UX global ~~~~*/
+    .services_ux {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 12;
+    }
+
+
+    /*~~~~ UX Fa ~~~~*/
+    .fa-ux {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+
+    /*~~~~ UI Global ~~~~*/
+    .services_ui {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 8;
+        grid-row-end: 12;
+    }
+
+
+    /*~~~~ UI fa ~~~~*/
+    .fa-ui {
+        grid-column: 2;
+        grid-row: 9;
+    }
+
+
+    /*~~~~ SEO Global ~~~~*/
+    .services_seo {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 11;
+        grid-row-end: 12;
+    }
+
+    /*~~~~ SEO Fa ~~~~*/
+    .fa-seo {
+        grid-column: 2;
+        grid-row: 12;
+    }
+
+    /*~~~~ contact text~~~~*/
+    .contact_address {
+        position: relative;
+        left: 0;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*~~~~ media ~~~~*/
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: #f5f5f5;
+    }
+    .main_menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+
+
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ header ~~~~~~*/
+
+
+    .fig-text-slider h1 {
+        font-size: 1.5em;
+    }
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ services ~~~~~~*/
+    .services_text {
+        padding-top: 100px;
+    }
+
+    .computer{
+        width: 60vw;
+        grid-row-start: 4;
+    }
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ projects ~~~~~~*/
+    .projects_text {
+        padding-top: 90px;
+    }
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ contact ~~~~~~*/
+    .contact_address {
+        position: relative;
+
+    }
+
+    /*~~~~~~ maps ~~~~~~*/
+    .small {
+        display: block;
+    }
+}
+@media screen and (max-width: 479px) {
+    .contact_address{
+        left: 0;
+        width: 80%;
+        margin: auto;
+        padding: auto;
+    }
+    .large {
+        display: none;
+    }
+}
