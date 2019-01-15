@@ -14,6 +14,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Projet_1_geslin___Copie$index_html__1_.dat" NAME="index.html (1) Coverage Results" MODIFIED="1546993128640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Projet_1_geslin$index_html.dat" NAME="index.html Coverage Results" MODIFIED="1546781785079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Projet_1_geslin___test_media$index_html__2_.dat" NAME="index.html (2) Coverage Results" MODIFIED="1547250443006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Projet_1_geslin___test_media$index_html.dat" NAME="index.html Coverage Results" MODIFIED="1547477568815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Projet_1_geslin$test_html.dat" NAME="test.html Coverage Results" MODIFIED="1546213357604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
@@ -32,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="550">
-                  <caret line="117" selection-start-line="117" selection-end-line="117" />
+                <state relative-caret-position="69">
+                  <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -45,8 +47,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/code.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="344" column="16" lean-forward="true" selection-start-line="344" selection-start-column="16" selection-end-line="344" selection-end-column="16" />
+                <state relative-caret-position="184">
+                  <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -65,37 +67,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>right</find>
-      <find>height:</find>
-      <find>logo</find>
-      <find>div</find>
-      <find>.button-header</find>
-      <find>grid-template-columns</find>
-      <find>services_text</find>
-      <find>grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;</find>
-      <find>grid-template-columns:</find>
-      <find>grid-template-rows: 50px 30px 80px 40px 40px 40px 35px 65px 30px 35px 55px 30px 35px 100px;</find>
-      <find>grid-template-</find>
-      <find>grid-template-rows</find>
-      <find>services-title</find>
-      <find>h2</find>
-      <find>iframe</find>
-      <find>projects_text</find>
-      <find>.services_text</find>
-      <find>.services_circle::before</find>
-      <find>.computer</find>
       <find>.fa-ux</find>
       <find>ul</find>
       <find>li</find>
-      <find>li</find>
-      <find>li</find>
-      <find>project_menu</find>
-      <find>nav</find>
       <find>nav</find>
       <find>works</find>
       <find>list-top</find>
       <find>main_menu</find>
+      <find>button</find>
+      <find>slider</find>
+      <find>fig-text-slider</find>
+      <find>div section h1</find>
+      <find>.fa-caret-down</find>
+      <find>underline</find>
+      <find>.services_circle::before</find>
+      <find>z-index</find>
+      <find>width</find>
+      <find>h2</find>
+      <find>h2</find>
+      <find>fa-caret-down</find>
+      <find>u</find>
+      <find>u</find>
+      <find>address</find>
+      <find>strong</find>
+      <find>project_menu</find>
+      <find>alt</find>
+      <find>class</find>
+      <find>services_</find>
+      <find>services_text</find>
+      <find>main_</find>
+      <find>_</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
@@ -120,7 +125,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="11" />
-    <option name="width" value="1327" />
+    <option name="width" value="1909" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -135,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -154,11 +159,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Projet_1_geslin - Copie/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Projet_1_geslin - test media/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Projet_1_geslin - Copie/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Projet_1_geslin - test media/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Projet_1_geslin/index.html" useBuiltInWebServerPort="true">
@@ -174,9 +185,12 @@
       <item itemvalue="JavaScript Debug.index.html (1)" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.test.html" />
+      <item itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (2)" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.test.html" />
@@ -231,11 +245,18 @@
       <workItem from="1547032879856" duration="1817000" />
       <workItem from="1547044390219" duration="3095000" />
       <workItem from="1547052168102" duration="13000" />
+      <workItem from="1547205376314" duration="11206000" />
+      <workItem from="1547249517845" duration="1021000" />
+      <workItem from="1547291259566" duration="1793000" />
+      <workItem from="1547321486183" duration="741000" />
+      <workItem from="1547456156607" duration="13183000" />
+      <workItem from="1547547004076" duration="1191000" />
+      <workItem from="1547551603061" duration="7502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133650000" />
+    <option name="totallyTimeSpent" value="170287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,26 +268,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="0" width="1327" height="1047" extended-state="0" />
+    <frame x="11" y="0" width="1909" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.5900901" side_tool="true" visible="true" weight="0.13343677" />
-      <window_info id="Favorites" order="1" sideWeight="0.50061655" side_tool="true" weight="0.25373134" />
-      <window_info content_ui="combo" x="834" y="71" width="251" height="897" id="Project" order="2" sideWeight="0.4099099" visible="true" weight="0.13343677" />
+      <window_info active="true" id="Structure" order="0" sideWeight="0.597973" side_tool="true" visible="true" weight="0.09406734" />
+      <window_info id="Favorites" order="1" sideWeight="0.5989933" side_tool="true" weight="0.09406734" />
+      <window_info content_ui="combo" x="834" y="71" width="251" height="897" id="Project" order="2" sideWeight="0.40202704" visible="true" weight="0.09406734" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992658" weight="0.32887402" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49789253" weight="0.033783782" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992658" weight="0.32882884" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49759486" weight="0.033783782" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49850747" weight="0.32819906" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49853158" weight="0.32887402" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021075" side_tool="true" weight="0.24860647" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32995495" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49853158" weight="0.32882884" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024051" side_tool="true" weight="0.033783782" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.14223194" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.14169821" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,24 +296,22 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/Sans titre-1" />
-    <entry file="file://$PROJECT_DIR$/Maquette/maquette32.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Maquette/maquette32.png" />
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/test.css" />
     <entry file="file://$PROJECT_DIR$/Support" />
     <entry file="file://$PROJECT_DIR$/../Support" />
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/code.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="184">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/code.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="344" column="16" lean-forward="true" selection-start-line="344" selection-start-column="16" selection-end-line="344" selection-end-column="16" />
+        <state relative-caret-position="69">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
