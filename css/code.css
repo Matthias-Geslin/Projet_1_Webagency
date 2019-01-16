@@ -1,933 +1,927 @@
-    /*
-      .-----------------------------------------------------------------.
-     /  .-.                                                         .-.  \
-    |  /   \                                                       /   \  |
-    | |\_.  |                                                     |    /| |
-    |\|  | /|                main blocks content                  |\  | |/|
-    | `---' |                                                     | `---' |
-    |       |                                                     |       |
-    |       |-----------------------------------------------------|       |
-    \       |                                                     |       /
-     \     /                                                       \     /
-      `---'                                                         `---'
-    */
-    @font-face {
-        font-family: 'Roboto-Regular';
-        src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-    }
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                main blocks content                  |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
 
-    /*~~~~ body ~~~~*/
-    body {
-        color: #676b70;
-        font-family: 'Roboto-Regular', sans-serif, "Impact", "Arial Black", "Arial", "Verdana";
-        font-weight: lighter;
-    }
+/*~~~~ body ~~~~*/
+body {
+    color: #676b70;
+    font-family: 'Roboto-Regular', sans-serif, "Impact", "Arial Black", "Arial", "Verdana";
+    font-weight: lighter;
+}
 
-    /*~~~~~~~~~~~~~~~~*/
-    /*~~~~ Header ~~~~*/
+/*~~~~~~~~~~~~~~~~*/
+/*~~~~ Header ~~~~*/
+.main-menu {
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+}
+
+.logo {
+    display: block;
+}
+
+/*~~~~ nav list ~~~~*/
+.list-top {
+    display: flex;
+    align-items: center;
+}
+
+.home,
+.services,
+.projects,
+.contact {
+    padding: 35px 20px 35px 20px;
+}
+
+/*~~~~ hover border ~~~~*/
+.home:hover,
+.services:hover,
+.projects:hover,
+.contact:hover {
+    color: #5d5d5d;
+    border-top: 3px solid #5cadd3;
+}
+
+
+/*~~~~ slider ~~~~*/
+.slider {
+    display: block;
+
+    position: relative;
+}
+
+.slider-girl, .slider-boy{
+    width: 100%;
+    padding-top: 90px;
+}
+
+header div {
+    position: relative;
+}
+
+/*~~~~ slider text ~~~~*/
+.fig-text-slider {
+    width: 35%;
+
+    position: absolute;
+    top: 12vw;
+    left: 10%;
+
+    font-size: 1vw;
+}
+
+div section h1{
+    font-size: 2vw;
+}
+
+/*~~~~ slider text button ~~~~*/
+.button-header {
+    width: 7vw;
+    height: 2.2vw;
+
+    font-size: 1vw;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px #4494bb;
+}
+
+.button-header:active {
+    position: relative;
+    top: 5px;
+
+    box-shadow: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~ slider buttons ~~~~*/
+.expandable, .expandable2{
+    display: none;
+}
+
+/*~~~~ btn left & girl image ~~~~*/
+#isexpanded:checked ~ .expandable{
+    display: block;
+    background: #cccccc;
+}
+
+/*~~~~ btn right & boy image~~~~*/
+#isexpanded2:checked ~ .expandable2{
+    display: block;
+    background: #cccccc;
+}
+
+/*~~~~ position style btn ~~~~*/
+.left,
+.right,
+.left-lb,
+.right-lb{
+    z-index: 1;
+    width: 40px;
+    height: 80px;
+
+    position: absolute;
+    top: 50%;
+
+    cursor: pointer;
+}
+
+.left-lb,
+.right-lb{
+    text-align: center;
+
+    border-radius: 0 50px 50px 0;
+    background-color: #434247;
+}
+
+.right,
+.right-lb{
+    right: 0;
+
+    border-radius: 50px 0 0 50px;
+}
+
+/*~~~~ fontawesome btn ~~~~*/
+.fa-chevron-left,
+.fa-chevron-right {
+    position: relative;
+    top: 33px;
+
+    color: white;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~*/
+/*~~~~ services ~~~~*/
+.services-text {
+    display: grid;
+    grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;
+    grid-template-rows: 50px 30px 60px 40px 40px 40px 35px 65px 30px 35px 55px 30px 35px 100px;
+    height: 800px;
+    padding-top: 15%;
+}
+
+.services-title {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 1;
+    margin: 0 auto 0 auto;
+    padding-bottom: 1%;
+}
+
+/*~~~~ underline fontawesome ~~~~*/
+.services-circle::before {
+    width: 9.517vw;
+    height: 1px;
+    content: '';
+
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #d9d9d9;
+}
+.services-circle {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 3;
+    position: relative;
+}
+
+.services-circle .fa-circle-title{
+    top: -26px;
+}
+/*~~~~ fontawesome services circle ~~~~*/
+.fa-circle-title {
+    display: block;
+    margin: auto;
+    padding: 3px;
+
+    position: relative;
+    top: -11px;
+}
+
+.services-text .services-sentence {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 3;
+}
+
+/*~~~~ apple ~~~~*/
+.computer {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 5;
+}
+
+/*~~~~ UX global ~~~~*/
+.services-ux {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+/*~~~~ UX Fa ~~~~*/
+.fa-ux {
+    grid-column: 7;
+    grid-row: 8;
+}
+
+/*~~~~ UI Global ~~~~*/
+.services-ui {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+/*~~~~ UI fa ~~~~*/
+.fa-ui {
+    grid-column: 7;
+    grid-row: 11;
+}
+
+/*~~~~ SEO Global ~~~~*/
+.services-seo {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 14;
+}
+/*~~~~ SEO Fa ~~~~*/
+.fa-seo {
+    grid-column: 7;
+    grid-row: 14;
+}
+
+.services-description{
+    margin-top: -5px;
+
+    line-height: 1.5;
+}
+
+/*~~~~ fa common ~~~~*/
+.fa-chart-line,
+.fa-cubes,
+.fa-chart-pie {
+    padding: 16px;
+
+    position: relative;
+
+    font-size: 1.5em;
+    border: 1px solid #d7d7d7;
+}
+
+/*~~~~ services text circles ~~~~*/
+.fa-chart-line::after,
+.fa-cubes::after,
+.fa-chart-pie::after {
+    width: 12px;
+    height: 13px;
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #5CADD3;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~*/
+/*~~~~ projects ~~~~*/
+.projects-text {
+    padding-top: 5%;
+
+    background-color: #f5f5f5;
+}
+/*~~~~ underline fontawesome~~~~*/
+.project-circle::before {
+    width: 9.517vw;
+    height: 1px;
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #d9d9d9;
+}
+
+/*~~~~ menu project ~~~~*/
+menu {
+    height: 100px;
+    justify-content: center;
+}
+
+menu ul{
+    padding: 0;
+}
+
+.works,
+.creative,
+.corporate,
+.portfolio {
+    padding: 15px;
+
+    background-color: #e5e5e5;
+}
+
+/*~~~~ menu borders ~~~~*/
+.works {
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.portfolio {
+    border-radius: 0 5px 5px 0;
+}
+
+/*~~~~ menu hover ~~~~*/
+.works:hover,
+.creative:hover,
+.corporate:hover,
+.portfolio:hover{
+    color: white;
+    box-shadow: 0 3px #4494bb;
+    background-color: #5cadd3;
+}
+
+/*~~~~ menu project fontawesome ~~~~*/
+.fa-caret-down{
+    display: none;
+    margin: 6px 0 0 40px;
+
+    position: absolute;
+
+    font-size: 30px;
+    color: #4494bb;
+}
+
+/*~~~~ project input radio ~~~~*/
+menu input{
+    position: absolute;
+    opacity: 0;
+}
+menu input:checked + label{
+    color: white;
+    background-color: #5cadd3;
+    box-shadow: 0 3px #4494bb;
+}
+input:checked + label + .fa-caret-down {
+    display: block;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~ project images ~~~~*/
+.project-figures{
+    margin: 0;
+}
+
+/*~~~~ project list ~~~~*/
+figure ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    justify-content: center;
+}
+figure li {
+    display: list-item;
+    padding: 10px;
+}
+
+/*~~~~ projects container ~~~~*/
+.project-set {
+    margin: 0;
+
+    position: relative;
+}
+/*~~~~ projects image ~~~~*/
+.project-picture {
+    width: 300px;
+    margin-bottom: -1%;
+}
+/*~~~~ projects text hover ~~~~*/
+.portfolio-text {
+    z-index: 5;
+    width: 100%;
+    height: 75px;
+
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*~~~~ project hover ~~~~*/
+.project-set:hover .portfolio-text {
+    opacity: 1;
+}
+
+.portfolio-text h3,
+.portfolio-text p {
+    z-index: 5;
+    padding-left: 10px;
+    color: white;
+    line-height: 0.2;
+}
+.portfolio-text p {
+    line-height: 0.7;
+    font-weight: normal;
+}
+.fa-eye {
+    padding: 10px;
+
+    position: absolute;
+    top: -20px;
+    right: 10px;
+
+    color: white;
+    border: 3px solid white;
+    background-color: #5cadd3;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~ contact infos ~~~~*/
+.contact-address {
+    width: 25%;
+    height: 500px;
+    margin: 2.5%;
+
+    position: absolute;
+    left: 60%;
+
+    line-height: 1.3;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-address *{
+    padding-left: 1.3vw;
+}
+
+footer h2{
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+
+footer strong{
+    color: #696d72;
+    font-weight: bold;
+}
+/*~~~~ underlined ~~~~*/
+u{
+    text-decoration: underline dotted;
+}
+footer strong, u{
+    margin-left: -1.3vw;
+}
+
+address {
+    margin-bottom: 15px;
+    color: #70747a;
+    text-align: left;
+    line-height: 1.3;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+/*~~~~ contact inputs ~~~~*/
+footer input {
+    width: 88%;
+    border-radius: 5px;
+}
+footer input,
+textarea {
+    margin: 5px 0 7px 0;
+    border: 1px solid #cccccc;
+}
+textarea {
+    width: 88%;
+    min-width: 35%;
+    max-width: 88%;
+    height: 180px;
+    min-height: 20%;
+
+    border-radius: 5px;
+}
+
+.contact-button {
+    width: 130px;
+    margin: 10px 0 25px 0;
+
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px #4494bb;
+}
+
+/*~~~~ map ~~~~*/
+iframe {
+    width: 100%;
+    border: none;
+}
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                  common properties                  |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+/*~~~~ links ~~~~*/
+a {
+    color: #676b70;
+    text-decoration: none;
+}
+
+strong {
+    color: #5cadd3;
+}
+
+/*~~~~ fontawesome ~~~~*/
+i {
+    color: #5cadd3;
+}
+
+/*~~~~ headers ~~~~*/
+h2 {
+    color: #272727;
+    font-size: 45px;
+}
+h3 {
+    color: black;
+}
+
+/*~~~~ list ~~~~*/
+ul {
+    list-style-type: none;
+}
+
+/*~~~~ map ~~~~*/
+.small {
+    display: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~ helper ~~~~~~*/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.block {
+    display: block;
+}
+
+.b-rad-50 {
+    border-radius: 50px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.back-blue {
+    background-color: #5cadd3;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.color-white {
+    color: white;
+}
+
+.padding-ten {
+    padding: 10px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+/*
+  .-----------------------------------------------------------------.
+ /  .-.                                                         .-.  \
+|  /   \                                                       /   \  |
+| |\_.  |                                                     |    /| |
+|\|  | /|                  media properties                   |\  | |/|
+| `---' |                                                     | `---' |
+|       |                                                     |       |
+|       |-----------------------------------------------------|       |
+\       |                                                     |       /
+ \     /                                                       \     /
+  `---'                                                         `---'
+*/
+/*~~~~ media lg ~~~~*/
+@media screen and (max-width: 1280px){
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ header ~~~~~~*/
     .main-menu {
-        z-index: 10;
+        display: flex;
         width: 100%;
-        height: 100px;
-        justify-content: space-around;
-        align-items: center;
 
         position: fixed;
     }
 
     .logo {
-        display: block;
+        margin: auto;
     }
-
-    /*~~~~ nav list ~~~~*/
-    .list-top {
-        display: flex;
-        align-items: center;
+    .list-top{
+        justify-content:center;
     }
-
     .home,
     .services,
     .projects,
     .contact {
-        padding: 35px 20px 35px 20px;
+        padding: 10px;
     }
 
-    /*~~~~ hover border ~~~~*/
-    .home:hover,
-    .services:hover,
-    .projects:hover,
-    .contact:hover {
-        color: #5d5d5d;
-        border-top: 3px solid #5cadd3;
-    }
-
-
-    /*~~~~ slider ~~~~*/
-    .slider {
-        display: block;
-
-        position: relative;
-    }
-
-    .slider-girl, .slider-boy{
-        width: 100%;
-        padding-top: 90px;
-    }
-
-    div {
-        position: relative;
-    }
-
-    /*~~~~ slider text ~~~~*/
     .fig-text-slider {
-        width: 35%;
+        width: 75%;
 
-        position: absolute;
-        top: 12vw;
-        left: 10%;
+        top: 35%;
 
-        font-size: 1vw;
-    }
-
-    div section h1{
         font-size: 2vw;
     }
-
-    /*~~~~ slider text button ~~~~*/
-    .button-header {
-        width: 7vw;
-        height: 2.2vw;
-
-        font-size: 1vw;
-
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 3px #4494bb;
+    div section h1{
+        font-size: 3vw;
     }
 
-    .button-header:active {
-        position: relative;
-        top: 5px;
+    .button-header{
+        width: 95px;
+        height: 25px;
 
-        box-shadow: none;
+        font-size: 15px;
     }
 
-
-    /*~~~~~~~~~~~~~~~~~~~~~~~~*/
-    /*~~~~ slider buttons ~~~~*/
-    .expandable, .expandable2{
-        display: none;
-    }
-
-    /*~~~~ btn left & girl image ~~~~*/
-    #isexpanded:checked ~ .expandable{
-        display: block;
-        background: #cccccc;
-    }
-
-    /*~~~~ btn right & boy image~~~~*/
-    #isexpanded2:checked ~ .expandable2{
-        display: block;
-        background: #cccccc;
-    }
-
-    /*~~~~ position style btn ~~~~*/
     .left,
     .right,
     .left-lb,
-    .right-lb{
-        z-index: 1;
-        width: 40px;
-        height: 80px;
+    .right-lb {
+        width: 30px;
+        height: 60px;
 
-        position: absolute;
-        top: 50%;
-
-        cursor: pointer;
+        top: 55%;
     }
 
-    .left-lb,
-    .right-lb{
-        text-align: center;
-
-        border-radius: 0 50px 50px 0;
-        background-color: #434247;
-    }
-
-    .right,
-    .right-lb{
-        right: 0;
-
-        border-radius: 50px 0 0 50px;
-    }
-
-    /*~~~~ fontawesome btn ~~~~*/
     .fa-chevron-left,
-    .fa-chevron-right {
-        position: relative;
-        top: 33px;
-
-        color: white;
+    .fa-chevron-right{
+        top: 22px;
     }
 
 
 
-    /*~~~~~~~~~~~~~~~~~~*/
-    /*~~~~ services ~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ services ~~~~~~*/
     .services-text {
-        display: grid;
         grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;
-        grid-template-rows: 50px 30px 60px 40px 40px 40px 35px 65px 30px 35px 55px 30px 35px 100px;
-        height: 800px;
-        padding-top: 5%;
     }
 
-    .services-title {
-        grid-column-start: 1;
-        grid-column-end: 12;
-        grid-row: 1;
-        margin: 0 auto 0 auto;
-        padding-bottom: 1%;
+    .computer{
+        grid-column: 2;
     }
 
-    /*~~~~ underline fontawesome ~~~~*/
-    .services-circle::before {
-        width: 9.517vw;
-        height: 1px;
-        content: '';
-
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        background-color: #d9d9d9;
+    .services-ux{
+        grid-column-end: 10;
     }
-    .services-circle {
-        grid-column-start: 1;
-        grid-column-end: 12;
-        grid-row: 3;
-        position: relative;
+    .services-ui{
+        grid-column-end: 10;
+    }
+    .services-seo{
+        grid-column-end: 10;
     }
 
-    .services-circle .fa-circle-title{
-        top: -26px;
-    }
-    /*~~~~ fontawesome services circle ~~~~*/
-    .fa-circle-title {
-        display: block;
-        margin: auto;
-        padding: 3px;
 
-        position: relative;
-        top: -11px;
-    }
 
-    .services-text .services-sentence {
-        grid-column-start: 1;
-        grid-column-end: 12;
-        grid-row: 3;
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ projects ~~~~~~*/
+    .projects-text {
+        padding-top: 90px;
+    }
+}
+
+/*~~~~ media ~~~~*/
+@media screen and (max-width: 960px) {
+    .computer{
+        display: none;
     }
 
-    /*~~~~ apple ~~~~*/
-    .computer {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row: 5;
+    .fig-text-slider {
+        top: 45%;
+    }
+
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ services ~~~~~~*/
+    .services-text{
+        grid-template-columns: 5% 8% 15.5% 15.5% 80px;
+        grid-template-rows: 40px 30px 60px 35px 35px 35px 60px 35px 60px 60px 35px 60px;
+    }
+
+    /*~~~~~~ underline fontawesome ~~~~~~*/
+    .services-circle::before, .project-circle::before {
+        width: 35vw;
     }
 
     /*~~~~ UX global ~~~~*/
     .services-ux {
-        grid-column-start: 8;
+        grid-column-start: 4;
         grid-column-end: 9;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 12;
     }
+
+
     /*~~~~ UX Fa ~~~~*/
     .fa-ux {
-        grid-column: 7;
-        grid-row: 8;
+        grid-column: 2;
+        grid-row: 5;
     }
+
 
     /*~~~~ UI Global ~~~~*/
     .services-ui {
-        grid-column-start: 8;
+        grid-column-start: 4;
         grid-column-end: 9;
-        grid-row-start: 10;
+        grid-row-start: 8;
         grid-row-end: 12;
     }
+
+
     /*~~~~ UI fa ~~~~*/
     .fa-ui {
-        grid-column: 7;
-        grid-row: 11;
+        grid-column: 2;
+        grid-row: 9;
     }
+
 
     /*~~~~ SEO Global ~~~~*/
     .services-seo {
-        grid-column-start: 8;
+        grid-column-start: 4;
         grid-column-end: 9;
-        grid-row-start: 13;
-        grid-row-end: 14;
+        grid-row-start: 11;
+        grid-row-end: 12;
     }
+
     /*~~~~ SEO Fa ~~~~*/
     .fa-seo {
-        grid-column: 7;
-        grid-row: 14;
+        grid-column: 2;
+        grid-row: 12;
     }
 
-    .services-description{
-        margin-top: -5px;
 
-        line-height: 1.5;
-    }
 
-    /*~~~~ fa common ~~~~*/
-    .fa-chart-line,
-    .fa-cubes,
-    .fa-chart-pie {
-        padding: 16px;
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ contact ~~~~~~*/
+    .contact-address {
+        width: 80%;
+        margin: auto;
 
         position: relative;
-
-        font-size: 1.5em;
-        border: 1px solid #d7d7d7;
+        left: 0;
     }
+}
 
-    /*~~~~ services text circles ~~~~*/
-    .fa-chart-line::after,
-    .fa-cubes::after,
-    .fa-chart-pie::after {
-        width: 12px;
-        height: 13px;
-        content: '';
-
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(50%, -50%);
-
-        border: 3px solid white;
-        border-radius: 50%;
-        background-color: #5CADD3;
-    }
-
-
-
-    /*~~~~~~~~~~~~~~~~~~*/
-    /*~~~~ projects ~~~~*/
-    .projects-text {
-        padding-top: 5%;
-
+/*~~~~ media ~~~~*/
+@media screen and (max-width: 768px) {
+    body {
         background-color: #f5f5f5;
     }
-    /*~~~~ underline fontawesome~~~~*/
-    .project-circle::before {
-        width: 9.517vw;
-        height: 1px;
-        content: '';
 
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
-        background-color: #d9d9d9;
+    .main-menu {
+        display: block;
     }
 
-    /*~~~~ menu project ~~~~*/
-    menu {
-        height: 100px;
-        justify-content: center;
+
+
+    /*~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ header ~~~~~~*/
+    .fig-text-slider, .fig-text-slider h1{
+        font-size: 3.2vw;
     }
 
-    menu ul{
-        padding: 0;
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ services ~~~~~~*/
+    .services-text {
+        padding-top: 100px;
     }
 
+    .computer{
+        grid-row-start: 4;
+        width: 60vw;
+    }
+
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ projects ~~~~~~*/
+    .projects-text {
+        padding-top: 90px;
+    }
+
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ contact ~~~~~~*/
+    .contact-address {
+        position: relative;
+    }
+
+    /*~~~~~~ maps ~~~~~~*/
+    .small {
+        display: block;
+    }
+    .large{
+        display: none;
+    }
+}
+
+/*~~~~ media sm ~~~~*/
+@media screen and (max-width: 479px) {
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ header ~~~~~~*/
+    .fig-text-slider{
+        top: 50%;
+    }
+
+
+
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ project ~~~~~~*/
     .works,
     .creative,
     .corporate,
     .portfolio {
-        padding: 15px;
-
+        padding: 6px;
         background-color: #e5e5e5;
     }
-
-    /*~~~~ menu borders ~~~~*/
-    .works {
-        border-radius: 5px 0 0 5px;
-        border: none;
-    }
-    .portfolio {
-        border-radius: 0 5px 5px 0;
-    }
-
-    /*~~~~ menu hover ~~~~*/
-    .works:hover,
-    .creative:hover,
-    .corporate:hover,
-    .portfolio:hover{
-        color: white;
-        box-shadow: 0 3px #4494bb;
-        background-color: #5cadd3;
-    }
-
-    /*~~~~ menu project fontawesome ~~~~*/
     .fa-caret-down{
-        display: none;
-        margin: 6px 0 0 40px;
-
-        position: absolute;
-
-        font-size: 30px;
-        color: #4494bb;
-    }
-
-    /*~~~~ project input radio ~~~~*/
-    menu input{
-        position: absolute;
-        opacity: 0;
-    }
-    menu input:checked + label{
-        color: white;
-        background-color: #5cadd3;
-        box-shadow: 0 3px #4494bb;
-    }
-    input:checked + label + .fa-caret-down {
-        display: block;
-    }
-
-    /*~~~~~~~~~~~~~~~~~~~~~~~~*/
-    /*~~~~ project images ~~~~*/
-    .project-figures{
-        margin: 0;
-    }
-
-    /*~~~~ project list ~~~~*/
-    figure ul {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-
-        justify-content: center;
-    }
-    figure li {
-        display: list-item;
-        padding: 10px;
-    }
-
-    /*~~~~ projects container ~~~~*/
-    .project-set {
-        margin: 0;
-
-        position: relative;
-    }
-    /*~~~~ projects image ~~~~*/
-    .project-picture {
-        width: 300px;
-        margin-bottom: -1%;
-    }
-    /*~~~~ projects text hover ~~~~*/
-    .portfolio-text {
-        z-index: 5;
-        width: 100%;
-        height: 75px;
-
-        position: absolute;
-        bottom: 0;
-        opacity: 0;
-
-        color: white;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    /*~~~~ project hover ~~~~*/
-    .project-set:hover .portfolio-text {
-        opacity: 1;
-    }
-
-    .portfolio-text h3,
-    .portfolio-text p {
-        z-index: 5;
-        padding-left: 10px;
-        color: white;
-        line-height: 0.2;
-    }
-    .portfolio-text p {
-        line-height: 0.7;
-        font-weight: normal;
-    }
-    .fa-eye {
-        padding: 10px;
-
-        position: absolute;
-        top: -20px;
-        right: 10px;
-
-        color: white;
-        border: 3px solid white;
-        background-color: #5cadd3;
+        margin: -3px 0 0 30px;
     }
 
 
 
-    /*~~~~~~~~~~~~~~~~~~~~~~~*/
-    /*~~~~ contact infos ~~~~*/
-    .contact-main{
-        padding-top: 35%;
-        margin-top: -35%;
-    }
-    /*~~~~ contact address ~~~~*/
+    /*~~~~~~~~~~~~~~~~~~~~~*/
+    /*~~~~~~ contact ~~~~~~*/
     .contact-address {
-        width: 25%;
-        height: 500px;
-        margin: 2.5%;
+        width: 95%;
 
-        position: absolute;
-        left: 60%;
+        text-align: center;
 
-        line-height: 1.3;
         background-color: rgba(255, 255, 255, 0.7);
     }
 
-    .contact-address *{
-        padding-left: 1.3vw;
-    }
-
-    footer h2{
-        margin: 10px 0 10px 0;
-        font-size: 30px;
-    }
-
-    footer strong{
-        color: #696d72;
-        font-weight: bold;
-    }
-    /*~~~~ underlined ~~~~*/
-    u{
-    text-decoration: underline dotted;
-    }
-    footer strong, u{
-        margin-left: -1.3vw;
-    }
-
-    address {
-        margin-bottom: 15px;
-        color: #70747a;
-        text-align: left;
-        line-height: 1.3;
-        font-style: normal;
-        font-weight: lighter;
-    }
-
-    /*~~~~ contact inputs ~~~~*/
-    footer input {
-        width: 88%;
-        border-radius: 5px;
-    }
-    footer input,
-    textarea {
-        margin: 5px 0 7px 0;
-        border: 1px solid #cccccc;
-    }
-    textarea {
-        width: 88%;
-        min-width: 35%;
-        max-width: 88%;
-        height: 180px;
-        min-height: 20%;
-
-        border-radius: 5px;
-    }
-
     .contact-button {
-        width: 130px;
-        margin: 10px 0 25px 0;
-
-        border: none;
-        border-radius: 3px;
-        box-shadow: 0 3px #4494bb;
+        width: 50%;
+        margin-left: 22%;
     }
 
-    /*~~~~ map ~~~~*/
-    iframe {
-        width: 100%;
-
-        border: none;
-    }
-    /*
-      .-----------------------------------------------------------------.
-     /  .-.                                                         .-.  \
-    |  /   \                                                       /   \  |
-    | |\_.  |                                                     |    /| |
-    |\|  | /|                  common properties                  |\  | |/|
-    | `---' |                                                     | `---' |
-    |       |                                                     |       |
-    |       |-----------------------------------------------------|       |
-    \       |                                                     |       /
-     \     /                                                       \     /
-      `---'                                                         `---'
-    */
-    /*~~~~ links ~~~~*/
-    a {
-        color: #676b70;
-        text-decoration: none;
-    }
-
-    strong {
-        color: #5cadd3;
-    }
-
-    /*~~~~ fontawesome ~~~~*/
-    i {
-        color: #5cadd3;
-    }
-
-    /*~~~~ headers ~~~~*/
-    h2 {
-        color: #272727;
-        font-size: 45px;
-    }
-    h3 {
-        color: black;
-    }
-
-    /*~~~~ list ~~~~*/
-    ul {
-        list-style-type: none;
-    }
-
-    /*~~~~ map ~~~~*/
-    .small {
+    /*~~~~~~ map ~~~~~~*/
+    .large {
         display: none;
     }
-
-
-    /*~~~~~~~~~~~~~~~~~~~~*/
-    /*~~~~~~ helper ~~~~~~*/
-    .flex {
-        display: flex;
-    }
-
-    .flex-col {
-        flex-direction: column;
-    }
-
-    .block {
-        display: block;
-    }
-
-    .b-rad-50 {
-        border-radius: 50px;
-    }
-
-    .txt-center {
-        text-align: center;
-    }
-
-    .back-blue {
-        background-color: #5cadd3;
-    }
-
-    .back-white {
-        background-color: white;
-    }
-
-    .color-white {
-        color: white;
-    }
-
-    .padding-ten {
-        padding: 10px;
-    }
-
-    .margin-auto {
-        margin: auto;
-    }
-
-    .text-upper {
-        text-transform: uppercase;
-    }
-    /*
-      .-----------------------------------------------------------------.
-     /  .-.                                                         .-.  \
-    |  /   \                                                       /   \  |
-    | |\_.  |                                                     |    /| |
-    |\|  | /|                  media properties                   |\  | |/|
-    | `---' |                                                     | `---' |
-    |       |                                                     |       |
-    |       |-----------------------------------------------------|       |
-    \       |                                                     |       /
-     \     /                                                       \     /
-      `---'                                                         `---'
-    */
-    /*~~~~ media lg ~~~~*/
-    @media screen and (max-width: 1280px){
-        /*~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ header ~~~~~~*/
-        .main-menu {
-            display: flex;
-            width: 100%;
-
-            position: fixed;
-        }
-
-        .logo {
-            margin: auto;
-        }
-        .list-top{
-            justify-content:center;
-        }
-        .home,
-        .services,
-        .projects,
-        .contact {
-            padding: 10px;
-        }
-
-        .fig-text-slider {
-            width: 75%;
-
-            top: 35%;
-
-            font-size: 2vw;
-        }
-        div section h1{
-            font-size: 3vw;
-        }
-
-        .button-header{
-            width: 95px;
-            height: 25px;
-
-            font-size: 15px;
-        }
-
-        .left,
-        .right,
-        .left-lb,
-        .right-lb {
-            width: 30px;
-            height: 60px;
-
-            top: 55%;
-        }
-
-        .fa-chevron-left,
-        .fa-chevron-right{
-            top: 22px;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ services ~~~~~~*/
-        .services-text {
-            grid-template-columns: 5% 2.5% 8% 5% 15.5% 15.5% 80px 32%;
-        }
-
-        .computer{
-            grid-column: 2;
-        }
-
-        .services-ux{
-            grid-column-end: 10;
-        }
-        .services-ui{
-            grid-column-end: 10;
-        }
-        .services-seo{
-            grid-column-end: 10;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ projects ~~~~~~*/
-        .projects-text {
-            padding-top: 90px;
-        }
-    }
-
-    /*~~~~ media ~~~~*/
-    @media screen and (max-width: 960px) {
-        .computer{
-            display: none;
-        }
-
-        .fig-text-slider {
-            top: 45%;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ services ~~~~~~*/
-        .services-text{
-            grid-template-columns: 5% 8% 15.5% 15.5% 80px;
-            grid-template-rows: 40px 30px 60px 35px 35px 35px 60px 35px 60px 60px 35px 60px;
-        }
-
-        /*~~~~~~ underline fontawesome ~~~~~~*/
-        .services-circle::before, .project-circle::before {
-            width: 35vw;
-        }
-
-        /*~~~~ UX global ~~~~*/
-        .services-ux {
-            grid-column-start: 4;
-            grid-column-end: 9;
-            grid-row-start: 4;
-            grid-row-end: 12;
-        }
-
-
-        /*~~~~ UX Fa ~~~~*/
-        .fa-ux {
-            grid-column: 2;
-            grid-row: 5;
-        }
-
-
-        /*~~~~ UI Global ~~~~*/
-        .services-ui {
-            grid-column-start: 4;
-            grid-column-end: 9;
-            grid-row-start: 8;
-            grid-row-end: 12;
-        }
-
-
-        /*~~~~ UI fa ~~~~*/
-        .fa-ui {
-            grid-column: 2;
-            grid-row: 9;
-        }
-
-
-        /*~~~~ SEO Global ~~~~*/
-        .services-seo {
-            grid-column-start: 4;
-            grid-column-end: 9;
-            grid-row-start: 11;
-            grid-row-end: 12;
-        }
-
-        /*~~~~ SEO Fa ~~~~*/
-        .fa-seo {
-            grid-column: 2;
-            grid-row: 12;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ contact ~~~~~~*/
-        .contact-address {
-            width: 80%;
-            margin: auto;
-
-            position: relative;
-            left: 0;
-        }
-    }
-
-    /*~~~~ media ~~~~*/
-    @media screen and (max-width: 768px) {
-        body {
-            background-color: #f5f5f5;
-        }
-
-        .main-menu {
-            display: block;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ header ~~~~~~*/
-        .fig-text-slider, .fig-text-slider h1{
-            font-size: 3.2vw;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ services ~~~~~~*/
-        .services-text {
-            padding-top: 100px;
-        }
-
-        .computer{
-            grid-row-start: 4;
-            width: 60vw;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ projects ~~~~~~*/
-        .projects-text {
-            padding-top: 90px;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ contact ~~~~~~*/
-        .contact-address {
-            position: relative;
-        }
-
-        /*~~~~~~ maps ~~~~~~*/
-        .small {
-            display: block;
-        }
-        .large{
-            display: none;
-        }
-    }
-
-    /*~~~~ media sm ~~~~*/
-    @media screen and (max-width: 479px) {
-        /*~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ header ~~~~~~*/
-        .fig-text-slider{
-            top: 50%;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ project ~~~~~~*/
-        .works,
-        .creative,
-        .corporate,
-        .portfolio {
-            padding: 6px;
-            background-color: #e5e5e5;
-        }
-        .fa-caret-down{
-            margin: -3px 0 0 30px;
-        }
-
-
-
-        /*~~~~~~~~~~~~~~~~~~~~~*/
-        /*~~~~~~ contact ~~~~~~*/
-        .contact-address {
-            width: 95%;
-
-            text-align: center;
-
-            background-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .contact-button {
-            width: 50%;
-            margin-left: 22%;
-        }
-
-        /*~~~~~~ map ~~~~~~*/
-        .large {
-            display: none;
-        }
-    }
+}
