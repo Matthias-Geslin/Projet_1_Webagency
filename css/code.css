@@ -891,7 +891,12 @@ ul, menu{
     /*~~~~~~~~~~~~~~~~~~~~~*/
     /*~~~~~~ header ~~~~~~*/
     .fig-text-slider{
-        top: 50%;
+        position: relative;
+        color: #676b70;
+        font-size: 15px;
+    }
+    .fig-text-slider h1{
+        font-size: 20px;
     }
 
 
