@@ -4,4 +4,4 @@ config/bdd.sql
 img/
 images/
 vendor/
-.gitattibutes
+.gitattibutes/
