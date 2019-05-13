@@ -1,0 +1,7 @@
+.idea/
+config/bdd.php
+config/bdd.sql
+img/
+images/
+vendor/
+.gitattibutes
