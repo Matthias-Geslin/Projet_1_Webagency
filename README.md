@@ -10,7 +10,8 @@ Openclassrooms Project with HTML and CSS.
 
 Matthias Geslin
 
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=https%3A%2F%2Fmatthmoiça.fr&url=https%3A%2F%2Fwebagency.matthias-geslin.fr)](https://webagency.matthias-geslin.fr)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fxn--matthmoia-x3a.fr&up_message=Online&down_message=Offline&style=plastic)
+
 [![GitHub followers](https://img.shields.io/github/followers/Matthias-Geslin?label=Github%20%3A%20Matthias-Geslin%20-%20Followers&logo=github)](https://github.com/Matthias-Geslin)
 
 ---
