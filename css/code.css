@@ -67,12 +67,14 @@ body {
     display: block;
 
     position: relative;
-}
 
-.slider-girl, .slider-boy{
+    .slider-girl, .slider-boy{
     width: 100%;
     padding-top: 90px;
+    }
 }
+
+
 
 header div {
     position: relative;
@@ -87,11 +89,13 @@ header div {
     left: 10%;
 
     font-size: 1vw;
+
+    h1 {
+    font-size: 2vw;
+    }
 }
 
-div section h1{
-    font-size: 2vw;
-}
+ 
 
 /*~~~~ slider text button ~~~~*/
 .button-header {
@@ -103,14 +107,16 @@ div section h1{
     border: none;
     border-radius: 5px;
     box-shadow: 0 3px #4494bb;
-}
 
-.button-header:active {
+    &:active {
     position: relative;
     top: 5px;
 
     box-shadow: none;
+    }
 }
+
+
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -122,13 +128,11 @@ div section h1{
 /*~~~~ btn left & girl image ~~~~*/
 #isexpanded:checked ~ .expandable{
     display: block;
-    background: #cccccc;
 }
 
 /*~~~~ btn right & boy image~~~~*/
 #isexpanded2:checked ~ .expandable2{
     display: block;
-    background: #cccccc;
 }
 
 /*~~~~ position style btn ~~~~*/
@@ -319,6 +323,10 @@ div section h1{
     padding-top: 5%;
 
     background-color: #f5f5f5;
+
+    input {
+        display: none;
+    }
 }
 /*~~~~ underline fontawesome~~~~*/
 .project-circle::before {
@@ -333,68 +341,66 @@ div section h1{
     background-color: #d9d9d9;
 }
 
+
+
 /*~~~~ menu project ~~~~*/
-menu {
-    height: 100px;
-    justify-content: center;
+.menu {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  width: 40%;
+  list-style: none;
+}
+.menu * {
+  cursor: pointer;
+}
+.menu label {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+.menu label:hover, .menu label:active, .menu label:focus {
+  border-bottom: solid white;
+  font-weight: bold;
+  background-color: #5cadd3;
+  color: white;
+}
+.menu + figure > * {
+  display: none;
 }
 
-menu ul{
-    padding: 0;
+/****** Menu Controls ******/
+#all:checked ~ .menu [for="all"],
+#creative:checked ~ .menu [for="creative"],
+#corporate:checked ~ .menu [for="corporate"],
+#portfolio:checked ~ .menu [for="portfolio"] {
+  border-bottom: solid white;
+  font-weight: bold;
+  background-color: #5cadd3;
+  color: white;
+}
+/****** Gallery ******/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 40px -6px;
+}
+/****** Gallery Controls ******/
+#all:checked ~ .gallery .all,
+#creative:checked ~ .gallery .creative,
+#corporate:checked ~ .gallery .corporate,
+#portfolio:checked ~ .gallery .portfolio {
+  display: block;
+  animation: opacity 5s;
 }
 
-.works,
-.creative,
-.corporate,
-.portfolio {
-    padding: 15px;
-
-    background-color: #e5e5e5;
-}
-
-/*~~~~ menu borders ~~~~*/
-.works {
-    border-radius: 5px 0 0 5px;
-    border: none;
-}
-.portfolio {
-    border-radius: 0 5px 5px 0;
-}
-
-/*~~~~ menu hover ~~~~*/
-.works:hover,
-.creative:hover,
-.corporate:hover,
-.portfolio:hover{
-    color: white;
-    box-shadow: 0 3px #4494bb;
-    background-color: #5cadd3;
-}
-
-/*~~~~ menu project fontawesome ~~~~*/
-.fa-caret-down{
-    display: none;
-    margin: 6px 0 0 40px;
-
-    position: absolute;
-
-    font-size: 30px;
-    color: #4494bb;
-}
-
-/*~~~~ project input radio ~~~~*/
-menu input{
-    position: absolute;
-    opacity: 0;
-}
-menu input:checked + label{
-    color: white;
-    background-color: #5cadd3;
-    box-shadow: 0 3px #4494bb;
-}
-input:checked + label + .fa-caret-down {
-    display: block;
-}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~ project images ~~~~*/
@@ -403,16 +409,10 @@ input:checked + label + .fa-caret-down {
 }
 
 /*~~~~ project list ~~~~*/
-figure ul {
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-
     justify-content: center;
-}
-figure li {
-    display: list-item;
-    padding: 10px;
 }
 
 /*~~~~ projects container ~~~~*/
@@ -420,12 +420,14 @@ figure li {
     margin: 0;
 
     position: relative;
-}
-/*~~~~ projects image ~~~~*/
-.project-picture {
+    
+    /*~~~~ projects image ~~~~*/
+    .project-picture {
     width: 300px;
     margin-bottom: -1%;
+    }
 }
+
 /*~~~~ projects text hover ~~~~*/
 .portfolio-text {
     z-index: 5;
@@ -473,9 +475,6 @@ figure li {
 /*~~~~ contact infos ~~~~*/
 .contact-address {
     width: 25%;
-    height: 500px;
-    margin: 2.5%;
-
     position: absolute;
     left: 60%;
     z-index: 6;
@@ -591,7 +590,7 @@ h3 {
 }
 
 /*~~~~ list ~~~~*/
-ul, menu{
+ul {
     list-style-type: none;
 }
 
@@ -688,7 +687,6 @@ ul, menu{
 
         top: 35%;
 
-
         font-size: 2vw;
     }
     div section h1{
@@ -728,17 +726,6 @@ ul, menu{
     .computer{
         grid-column: 2;
     }
-
-    .services-ux{
-        grid-column-end: 10;
-    }
-    .services-ui{
-        grid-column-end: 10;
-    }
-    .services-seo{
-        grid-column-end: 10;
-    }
-
 
     .services-ux{
         grid-column-end: 10;
@@ -873,6 +860,8 @@ ul, menu{
         width: 60vw;
     }
 
+
+
     /*~~~~~~~~~~~~~~~~~~~~~~*/
     /*~~~~~~ projects ~~~~~~*/
     .projects-text {
@@ -901,12 +890,6 @@ ul, menu{
     /*~~~~~~~~~~~~~~~~~~~~~*/
     /*~~~~~~ header ~~~~~~*/
     .fig-text-slider{
-        position: relative;
-        color: #676b70;
-        font-size: 15px;
-    }
-    .fig-text-slider h1{
-        font-size: 20px;
         top: 50%;
     }
 
